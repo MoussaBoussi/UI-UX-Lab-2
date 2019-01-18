@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day|Roboto');
+html {
+    background-color: rgb(178, 180, 179);
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     margin: 0;
+    background-color: rgb(118, 131, 134);
+
+}
+
+
+.checked {
+    font-size: 32px;
+    color: orange;
 }
 
 .prof {
@@ -8,9 +23,10 @@ body {
 }
 
 .prof_img {
-    height: 100px;
-    width: 100px;
+    height: 130px;
+    width: 130px;
     border-radius: 50%;
+    padding: 10px;
 }
 
 /* .prof_status {
@@ -33,6 +49,10 @@ h4 {
     font-size: 32px;
 }
 
+.feed {
+    font-family: 'Dawning of a New Day', cursive;
+}
+
 .label {
     font-weight: bold;
 }
@@ -40,6 +60,7 @@ h4 {
 .name_rating {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .rating {
@@ -47,8 +68,25 @@ h4 {
     flex-direction: row;
     justify-content: center;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.home_txt , .meetup_txt , .msg_txt , .myprof_txt {
+    margin-top: 0;
+}
+
+.btn_home , .btn_meetup , .btn_msg , .btn_prof {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .navbar {
-    background-color: lightgray;
+    background-color: #e0e0e0;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -57,11 +95,35 @@ h4 {
     justify-content: space-around;
 }
 
+.home_img , .meetup_img , .msg_img , .myprof_img {
+    align-self: center;
+}
+
+
+
+.feed_post {
+    border-top: 5px solid black;
+}
+
 @media only screen and (min-width: 480px) {
+
+    body {
+        font-size: 32px;
+    }
+
+    h4 {
+        font-size: 48px;
+    }
+    main {
+        position: relative;
+        bottom: 0;
+    }
     .navbar {
         position: relative;
-        bottom: 80%;
         top: 0;
-        /* position: static; */
+    }
+    .prof {
+        height: 100%;
+        width: 30%;
     }
 }
