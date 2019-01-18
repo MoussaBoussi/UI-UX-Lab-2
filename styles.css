@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+
+.prof {
+    display: flex;
+    flex-direction: row;
+}
+
+.prof_img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* .prof_status {
+    height:20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    top: 68px;
+    right: 61px;
+    border: 2px solid white;
+} */
+
+.prof_name {
+    align-self: center;
+    margin: 15px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.name_rating {
+    display: flex;
+    flex-direction: column;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.navbar {
+    background-color: lightgray;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (min-width: 480px) {
+    .navbar {
+        position: relative;
+        bottom: 80%;
+        top: 0;
+        /* position: static; */
+    }
+}
